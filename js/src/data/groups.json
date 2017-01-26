@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "groupName": "Кофейная группа",
+    "description": "description",
+    "groupImage": "",
+    "toppings": [
+      {
+        "id": 1,
+        "tpoppingName": "Кофейный tpoppingName",
+        "shortDescription": "shortDescription",
+        "description": "Description",
+        "imageUrl": ""
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "groupName": "Коктейльная группа",
+    "description": "description",
+    "groupImage": "",
+    "toppings": [
+      {
+        "id": 1,
+        "tpoppingName": "Коктейльный tpoppingName",
+        "shortDescription": "shortDescription",
+        "description": "Description",
+        "imageUrl": ""
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "groupName": "Фруктовая группа",
+    "description": "description",
+    "groupImage": "",
+    "toppings": [
+      {
+        "id": 1,
+        "tpoppingName": "Фруктовый tpoppingName",
+        "shortDescription": "shortDescription",
+        "description": "Description",
+        "imageUrl": ""
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "groupName": "Ягодная группа",
+    "description": "description",
+    "groupImage": "",
+    "toppings": [
+      {
+        "id": 1,
+        "tpoppingName": "Ягодный tpoppingName",
+        "shortDescription": "shortDescription",
+        "description": "Description",
+        "imageUrl": ""
+      }
+    ]
+  }
+]

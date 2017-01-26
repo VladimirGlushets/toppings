@@ -54,16 +54,16 @@ export default class ThemeViewComponent{
         this.componentSourceObj = componentSourceObj;
     }
 
-    getView() {
+    getView() {      
         let root = document.createElement("div");
         root.setAttribute("class", "article-container");
 
         let body = document.createElement("div");
         body.setAttribute("class", "body");
 
-        let image = getImageElement(this.componentSourceObj.id, this.componentSourceObj.urlsToLogos.small, this.changeSelectedThemeId);
+        let image = getImageElement(this.componentSourceObj.id, this.groupImage, this.changeSelectedThemeId);
 
-        let title = getTitleElement(this.componentSourceObj.id, this.componentSourceObj.name, this.changeSelectedThemeId);
+        let title = getTitleElement(this.componentSourceObj.id, this.componentSourceObj.groupName, this.changeSelectedThemeId);
 
         let description = getDescriptionElement(this.componentSourceObj.description);
 

@@ -48,7 +48,12 @@ module.exports = {
         }, {
             test: /\.(png|jpg|svg|ttf|eot|woff|woff2)$/,
             loader: 'url?name=[path][name].[ext]&limit=4096' // return data url (for image it is base64 string)
-        }]
+        },
+        {
+          test: /\.json$/,
+          loader: 'json-loader'
+        }
+      ]
     },
 
     plugins: [

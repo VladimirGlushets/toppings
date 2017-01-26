@@ -72,13 +72,13 @@ export default class ArticleViewComponent {
         let body = document.createElement("div");
         body.setAttribute("class", "body");
 
-        let image = getImageElement(this.componentSourceObj.urlToImage, this.componentSourceObj.url);
+        let image = getImageElement(this.componentSourceObj.imageUrl, this.componentSourceObj.url);
 
-        let title = getTitleElement(this.componentSourceObj.url, this.componentSourceObj.title);
+        let title = getTitleElement(this.componentSourceObj.url, this.componentSourceObj.tpoppingName);
 
         let author = getAuthorElement(this.componentSourceObj.author);
 
-        let description = getDescriptionElement(this.componentSourceObj.description);
+        let description = getDescriptionElement(this.componentSourceObj.shortDescription);
 
         let publishAt = getPublishAtElement(this.componentSourceObj.publishedAt);
 

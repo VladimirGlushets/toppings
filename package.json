@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/VladimirGlushets/vladimirglushets.github.io#readme",
   "dependencies": {
+    "jquery": "^3.1.1",
     "json-loader": "^0.5.4"
   },
   "devDependencies": {

@@ -1,4 +1,9 @@
+//import $ from "jquery";
+
 import UrlService from './urlService';
+ //var json = require('../data/groups.json'); //(with path)
+
+import json from  '../data/groups.json';
 
 // service for providing source data from API
 export default class DataService {
@@ -7,30 +12,15 @@ export default class DataService {
     }
 
     getAllThemes() {
-        return axios.get(this.urlService.getThemesUrl())
-            .then((response) => {
-                if (response.status != 200) {
-                    console.log(response);
-                } else {
-                    return response.data.sources;
-                }
-            })
-            .catch((err) => {
-                console.log(err);
-            });
+      return new Promise(function(resolve, reject) {
+        resolve(json);
+      });
     }
 
-    getArticlesForThema(thema) {
-        return axios.get(this.urlService.getArticlesUrl(thema))
-            .then((response) => {
-                if (response.status != 200) {
-                    console.log(response);
-                } else {
-                    return response.data.articles;
-                }
-            })
-            .catch((err) => {
-                console.log(err);
-            });
+    getArticlesForThema(id) {
+      return new Promise(function(resolve, reject) {
+        var group = json.filter((el) => { return el.id == id[0]});
+        resolve(group[0].toppings);
+      });
     }
 };
